@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kazuhito's portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <section class="parallax-section parallax-section-1 ">
+        <div class="text">
+            kazuhito's<br> portfolio
+        </div>
+    </section>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+        <section class="parallax-section parallax-section-2 area ">
+            <div id="about">
+                <h1>About ME</h1>
+                <div class="main1">
+                    <div id="photo ">
+                        <img src="images/me.jpg" alt="photo" 　width="300" height="350">
+                    </div>
+                    <div class="introduce col-md-auto col-12">
+                        <h2>Kazuhito Sekine</h2>
+                        <p>年齢：23歳
+                            <br> 出身：横浜市
+                            <br> 学歴：青山学院大学　経済学部　卒
+                            <br> 職業：無職　前職　TV番組AD
+                            <br> 趣味：銭湯巡り　ウインドサーフィン　フットサル　ファッション<br>
+                            <br> 新卒で入った会社を辞めて、ITの世界に飛び込んでみようと
+                            <br> 現在フロントエンドエンジニアを目指して勉強しています。
+                            <br> 専門的なスキルを付けて、活躍できるように頑張っています。
+                            <br> よろしくお願い致します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="parallax-section parallax-section-3 area">
+            <div id="portfolio">
+                <h3>Portfolio</h3>
+                <p class="midasi">開発したWEBアプリです。</p>
+                <div class="wrapper">
+                    <div class="flexbox">
+                        <div class="img-wrapper">
+                            <a href="http://midori320.sakura.ne.jp/omoide/" data-toggle="modal" class="add-button" data-target="#exampleModal"><img src="images/omnide.jpg" alt="omoide-saito" width="250" height="300"></a>
+                        </div>
+                        <p>
+                            複数人でのグループで写真と共に、思い出を共有できるサイトがあれば、面白いと思い作りました。<br> 思い出を共有できるサイトです。
+                        </p>
+                    </div>
+                    <div class="flexbox reverse">
+                        <div class="img-wrapper">
+                            <a href="http://midori320.sakura.ne.jp/original-test/" data-toggle="modal" class="add-button" data-target="#exampleModal"> <img src="images/lp.jpg" alt="page" width="250" height="300"></a>
+                        </div>
+                        <p>勉強した言語の知識を詰め込んだランディングページです。デザインは全くいじっていないので、<br> 見栄えは悪いですが、いろんなことしてみました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="parallax-section parallax-section-4 area">
+            <div id="contact">
+                <div class="box">
+                    <div id="contact_page">
+                        <h1>Contact</h1>
+                        <h2>お問合せ</h2>
+                        <p>ご連絡はこちらからおねがいします。</p>
+                        <form action="mail.php" method="post" class="contact_form">
+                            <div class="input input_name">
+                                <p>お名前</p>
+                                <input type="text" name="name" value>
+                            </div>
+                            <div class="input input_mail">
+                                <p>メールアドレス</p>
+                                <input type="text" name="email" value>
+                            </div>
+                            <div class="input input_title">
+                                <p>タイトル</p>
+                                <input type="text" name="title" value>
+                            </div>
+                            <div class="input input_main">
+                                <p>内容</p>
+                                <textarea name="main" value></textarea>
+                            </div>
+                            <div class="input_submit">
+                                <input type="submit" class="btn btn-primary" name="submit" value="送信">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer">
+                &copy; 2021/3 Second Original Inc.
+            </footer>
+        </section>
+    <script src="mobile-detect.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

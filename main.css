@@ -1,0 +1,298 @@
+.parallax-section {
+  /* 画面全体を覆う */
+  height: 100vh;
+  width: 100%;
+
+  /* 背景が画面全体を覆うようにする */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* 各スライドの基本スタイル */
+.parallax-section {
+  /* 画面全体を覆う */
+  height: 80vh;
+  width: 100%;
+
+  /* 背景が画面全体を覆うようにする */
+
+}
+
+/* 1枚目のスライド */
+.parallax-section-1 {
+  background-image: url(images/1mai.jpg);
+  background-size: cover;
+
+  width: 100%;
+}
+
+/* 2枚目のスライド */
+.parallax-section-2 {
+  height: 100%;
+  width: 100%;
+    background-image: url(images/blue-snow.png);
+    /*「Background pattern from Toptal Subtle Patterns」*/
+    background-size: cover;
+}
+
+/* 3枚目のスライド */
+.parallax-section-3 {
+ background-image: url(images/wormz.png);
+ background-size: cover;
+    /*「Background pattern from Toptal Subtle Patterns」*/
+   height: 100%;
+  width: 100%;
+}
+
+/* 4枚目のスライド */
+.parallax-section-4 {
+  background-image: url(images/IMG_6179.jpg);
+   height: 100%;
+  width: 100%;
+}
+
+/* テキストのスタイル */
+.text {
+  /* 左右中央寄せ */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  /* テキストをセンタリング */
+  text-align: center;
+
+  font-size: 5rem;
+  color: white;
+
+  /* 影を付けて読みやすくする */
+  text-shadow:
+  -1px -1px 6px #000,
+  1px -1px 6px #000,
+  -1px 1px 6px #000,
+  1px 1px 6px #000;
+}
+
+
+
+
+/*ここからAboutページ*/
+
+header{
+    background-color: #EEEEEE;
+    margin:0;
+}
+.menu ul{
+   display: flex;
+   justify-content: center;
+   margin: 0;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+.menu ul li a{
+  text-decoration: none;
+      color:#555555;
+      font-size: 30px;
+}
+
+.menu ul li a:hover{
+    color: #111111;
+    font-weight: 800;
+}
+
+.main1{
+    display: flex;
+    justify-content: center;
+}
+.main1 p{
+  margin-top:60px;
+}
+.introduce{
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: 60px;
+    color: black;
+}
+.introduce h2{
+  margin:0;
+}
+#about{
+  width: 100%;
+  padding:150px 0px;
+}
+#about h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+
+/*ここからportfolio*/
+#portfolio h3{
+  text-align: center;
+  padding-top: 60px;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+#portfolio{
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.midasi {
+  text-align:center;
+  margin: 0;
+}
+
+.wrapper{
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.flexbox{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-bottom: 70px;
+}
+
+.flexbox p{
+  padding-top: 20px;
+}
+
+.reverse{
+  flex-direction:row-reverse;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.img-wrapper{
+
+  height: 200px;
+}
+
+.description{
+  max-width: 500px;
+  padding-top: 30px;
+}
+
+
+
+.input input, .input textarea{
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 30px;
+}
+
+.box{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    position: relative;
+    background-image: url(images/IMG_6179.jpg); 
+    background-size: cover;
+}
+
+#contact_page{
+max-width: 500px;
+width: 85vw;
+position: relative;
+z-index: 1;
+margin: 0 auto;
+background-color: white;
+padding: 50px;
+}
+
+
+.input_submit {
+    text-align: center;
+}
+
+.input p{
+    margin-bottom: 0;
+    margin-top: 10px;
+    display: flex;
+}
+
+#contact_page h1{
+    font-size: 60px;
+    text-align: center;
+}
+#contact_page h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#contact_page p{
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+/*ここからコンタクトページ*/
+
+@media(max-width:575px){
+.menu ul{
+    display: block;
+}
+ .menu ul li a{
+    font-size: 15px;
+}   
+.introduce{
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.main1{
+    display: block;
+    text-align: center;
+}
+#photo{
+    text-align: center;
+    display: block;
+}
+#about{
+  width: 100%;
+  padding: 0px;
+}
+.main1 p{
+  margin-top:0px;
+}
+
+#portfolio{
+  background-image: url(images/wormz.png);
+}
+
+#portfolio h3{
+  padding-top: 0px;
+}
+
+.img-wrapper{
+  text-align: center;
+  margin-top: 50px;
+}
+.reverse{
+  padding-top: 3px;
+}
+.flexbox{
+  display: block;
+  margin-bottom: 0px;
+}
+.flexbox p{
+  margin-top: 100px;
+  padding: 25px;
+}
+
+.parallax-section-2 {
+  padding-bottom: 20px;
+}
+}
